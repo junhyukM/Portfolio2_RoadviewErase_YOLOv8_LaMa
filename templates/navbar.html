@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0" id="navbar-scroll">
+    <a href="{% url "img_erase:main" %}" class="navbar-brand ms-lg-5">
+        <h5 class="display-5 m-0">Cleaner</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-5 ms-lg-5" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="{% url "img_erase:main" %}" class="nav-item nav-link">Home</a>
+            <a href="{% url "img_erase:main" %}" class="nav-item nav-link">Image</a>
+            <a href="{% url "media_erase:media_upload" %}" class="nav-item nav-link">Video</a>
+            <a href="#" class="nav-item nav-link">Inpaint</a>
+        </div>
+    </div>
+</nav>

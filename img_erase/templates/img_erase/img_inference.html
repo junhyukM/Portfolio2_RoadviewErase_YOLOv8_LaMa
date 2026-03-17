@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load bootstrap5 %}
+{% block content %}
+
+<style>
+    .interence_img {
+        width: 24rem;
+        margin: auto;
+        padding: 20px;
+        display: none;
+        text-align: center;
+        align-items: center;
+    }
+
+
+</style>
+
+<div class='d-flex justify-content-center' style="padding-top: 5rem;">
+    <div class='row inference_img'>
+        <div class="col-6">
+            <h4>Before</h4>
+            <img src="/media/{{ img_path }}" alt="image" width="100%">
+        </div>
+        <div class="col-6">
+            <h4>After</h4>
+            <img src="/media/{{ inference_path }}" alt="image" width="100%">
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
