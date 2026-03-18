@@ -18,4 +18,6 @@
 - Python 3.11
 
 ## 🎥 결과물 (Demo)
-![Roadview Object Removal](media/README_inference.gif)
+<p align="center">
+<img src="media/README_inference.gif" width="90%">
+</p>
