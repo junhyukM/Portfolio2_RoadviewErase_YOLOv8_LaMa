@@ -42,7 +42,7 @@ def load_jit_model(url_or_path, device, model_md5: str):
         model_path = download_model(url_or_path, model_md5)
 
     try:
-        model = torch.jit.load(model_path, map_location="cpu").to(device)
+        model = torch.jit.load(model_path, map_location="cuda").to(device)
     except Exception as e:
         handle_error(model_path, model_md5, e)
     model.eval()

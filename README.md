@@ -16,3 +16,6 @@
 ## ⚙️ 환경 설정
 - pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
 - Python 3.11
+
+## 🎥 결과물 (Demo)
+![Roadview Object Removal](media/README_inference.gif)

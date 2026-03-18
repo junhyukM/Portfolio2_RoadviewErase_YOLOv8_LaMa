@@ -129,7 +129,7 @@ def frame_save(video_path):
     cap = cv2.VideoCapture(video_path)
 
     # 프레임 간격
-    frame_interval = 10
+    frame_interval = 1
 
     # 프레임 수 초기화
     frame_count = 0
@@ -166,9 +166,9 @@ def set_video(results_inference_video_path, target_video):
     
     # 생성된 영상 이름 input 된 파일 이름
     output_video_path = os.path.join(output_folder, target_video)
-    # fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # 코덱 설정
+    # fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # 코덱 설정, 안됨...
     fourcc = cv2.VideoWriter_fourcc(*'H264')  # 코덱 설정
-    frame_rate = 2.0
+    frame_rate = 30.0
 
     # 이미지 파일 목록 가져오기
     image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder) if f.endswith('.jpg')]
